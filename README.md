@@ -38,10 +38,11 @@ Edit `news.html`. Copy an existing `<div class="news-item">` block, place it at 
 If it's a major item, also consider updating the three "Recent Highlights" on `index.html`.
 
 ### Add/remove a lab member
-Edit `people.html`. Members are `<div class="person">` blocks with a photo in
-`images/people/` (named `firstname-lastname.jpg`). When someone leaves, move their block
-from "Current Lab Members" to "Former Members" and add their years. Members without photos
-use `<div class="person no-photo">` (text-only card).
+**`PEOPLE.md` is the source of truth for the roster** — update it first (add a row, or
+move a member to Alumni), then sync `people.html` to match. Members are
+`<div class="person">` blocks with a photo in `images/people/` (named
+`firstname-lastname.jpg`). Members without photos use `<div class="person no-photo">`
+(text-only card).
 
 ### Add a publication
 Edit `publications.html`. Entries are `<li>` under the year's `<ul class="pubs">`;

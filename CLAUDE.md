@@ -29,7 +29,8 @@ This file only adds agent-specific operating notes.
 
 - "Add news/award X" → news.html top + maybe index.html highlights (keep 3 there).
 - New paper → publications.html under its year (journal articles only).
-- New member/departure → people.html (photos: square-ish JPG in images/people/,
-  firstname-lastname.jpg).
+- New member/departure → update PEOPLE.md (roster source of truth) AND people.html
+  (photos: square-ish JPG in images/people/, firstname-lastname.jpg). If PEOPLE.md and
+  people.html disagree, PEOPLE.md wins — Grace may edit it directly on GitHub.
 - New talk recordings → "Selected Presentations" boxes on research.html; link SPIE DL paper
   pages or YouTube directly.
