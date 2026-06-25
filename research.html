@@ -3,296 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — IMPACT Lab</title>
+<title>Research - IMPACT Lab</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site">
-  <div class="wrap masthead">
-    <a class="brand" href="index.html">
-      <div class="lab">IMPACT Lab</div>
-      <div class="full">Laboratory for Imaging Physics, Analysis, and Clinical Translation</div>
-    </a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="news.html">News &amp; Awards</a>
-      <a href="join.html">Join Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
+<header class="site"><div class="wrap masthead"><a class="brand" href="index.html"><div class="lab">IMPACT Lab</div><div class="full">Laboratory for Imaging Physics, Analysis, and Clinical Translation</div></a><nav class="nav"><a href="index.html">Home</a><a href="research.html" class="active">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="news.html">News &amp; Awards</a><a href="join.html">Join Us</a></nav></div></header>
 
-<div class="page-head">
-  <div class="wrap">
-    <h1>Research</h1>
-    <p>From blackboard to benchtop to bedside — we develop CT and cone-beam CT technologies
-    grounded in a rigorous understanding of image science.</p>
-  </div>
-</div>
+<div class="page-head"><div class="wrap"><h1>Research</h1></div></div>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Theme 1</p>
-    <h2 class="title">Novel Imaging Techniques for Interventional Applications</h2>
-    <div class="grid c2">
-      <div class="card">
-        <h3>Non-Circular Orbits for Image Quality Improvement</h3>
-        <p>Conventional circular scan orbits suffer from cone-beam artifacts and severe metal
-        artifacts near implants and surgical hardware. We design and implement novel orbits —
-        such as sawtooth and universal metal-tolerant trajectories — on clinical robotic C-arm
-        systems (e.g., Siemens ARTIS pheno), including fully automatic online geometric
-        calibration with arbitrarily placed fiducials.</p>
-        <ul>
-          <li>Universal orbit design for metal artifact elimination</li>
-          <li>Practical workflows for arbitrary orbits on clinical robotic C-arms</li>
-          <li>Revealing pelvic and spinal structures near metal hardware</li>
-        </ul>
-        <div class="spie-links">
-          <strong>Selected Presentations</strong>
-          <ul>
-            <li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11312/2550203/Non-circular-CT-orbit-design-for-elimination-of-metal-artifacts/10.1117/12.2550203.short" target="_blank" rel="noopener">Non-circular CT orbit design for elimination of metal artifacts</a> — SPIE Medical Imaging 2020 <em>(paper + presentation recording)</em></li>
-            <li><a href="https://www.spiedigitallibrary.org/search?term=%22Task-driven%20image%20acquisition%20and%20reconstruction%20in%20cone-beam%20CT%22" target="_blank" rel="noopener">Task-driven acquisition and reconstruction in cone-beam CT</a> — SPIE Medical Imaging 2015 <em>(1st place, Physics of Medical Imaging Student Paper Award)</em></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block research-topic"><div class="wrap"><h2 class="title">Novel Imaging Techniques for Interventional Applications</h2><div class="topic-slide active"><h3 class="topic-kicker">Non-Circular Orbit Design for Interventional Cone-Beam CT</h3><div class="topic-panels"><div class="panel figure-panel"><div class="image-carousel"><div class="image-slide active"><img class="panel-img" src="images/research/generalized-orbit-completeness.png" alt="Completeness maps for generalized CT orbit design"></div><div class="image-slide"><img class="panel-img" src="images/research/generalized-orbit-phantom-cases.png" alt="Phantom images comparing circular and non-circular orbit cases"></div><div class="carousel-controls image-controls"><button type="button" data-dir="-1">Previous</button><button type="button" data-dir="1">Next</button></div></div></div><div class="panel text-panel"><p>We develop novel acquisition and reconstruction techniques for interventional cone-beam CT, including task-driven imaging and non-circular source-detector orbits for metal artifact reduction. This work uses sampling analysis, reconstruction modeling, and phantom experiments to evaluate how orbit design affects image quality near challenging anatomy and high-attenuation objects.</p><ul><li>Non-circular orbit design for metal artifact reduction</li><li>Task-driven acquisition and reconstruction for cone-beam CT</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11312/2550203/Non-circular-CT-orbit-design-for-elimination-of-metal-artifacts/10.1117/12.2550203.short" target="_blank" rel="noopener">Non-circular CT orbit design for elimination of metal artifacts</a> - SPIE Medical Imaging 2020</li><li><a href="https://www.spiedigitallibrary.org/search?term=%22Task-driven%20image%20acquisition%20and%20reconstruction%20in%20cone-beam%20CT%22" target="_blank" rel="noopener">Task-driven acquisition and reconstruction in cone-beam CT</a> - SPIE Medical Imaging 2015</li></ul></div></div></div></div></div></section>
 
-<section class="block alt">
-  <div class="wrap">
-    <p class="eyebrow">Theme 2</p>
-    <h2 class="title">Spectral Imaging for Angiography and Diagnostic CT</h2>
-    <div class="grid c2">
-      <div class="card">
-        <h3>Multi-Layer and Photon-Counting Detectors</h3>
-        <p>We design and optimize spectral detector hardware, including a triple-layer
-        flat-panel detector enabling three-material decomposition (soft tissue, bone,
-        iodine/gadolinium contrast), and study photon-counting CT systems with realistic
-        models of charge sharing, pulse pileup, and nonuniform response.</p>
-        <ul>
-          <li>Triple-layer flat-panel detector design optimization</li>
-          <li>Model-based and deep learning material decomposition</li>
-          <li>Multiple focal spots for high-resolution photon-counting CT</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Spectral Digital Subtraction Angiography</h3>
-        <p>Temporal subtraction in DSA is highly sensitive to patient motion. Our joint
-        spectral-temporal processing strategy combines energy-resolved measurements across
-        time frames, improving vessel visibility and motion robustness for interventional
-        angiography.</p>
-        <ul>
-          <li>Joint temporal and spectral processing with photon-counting detectors
-          (IEEE TBME, 2025)</li>
-          <li>Diffusion posterior sampling for 4D-DSA from limited-angle data</li>
-          <li>High-sensitivity iodine imaging combining spectral CT technologies</li>
-        </ul>
-        <div class="spie-links">
-          <strong>Selected Presentations</strong>
-          <ul>
-            <li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12463/124630Y/Three-material-decomposition-using-a-dual-layer-flat-panel-detector/10.1117/12.2654443.short" target="_blank" rel="noopener">Three-material decomposition using a dual-layer flat-panel detector in the presence of soft tissue motion</a> — SPIE Medical Imaging 2023 <em>(paper + presentation recording)</em></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block alt research-topic"><div class="wrap"><h2 class="title">Spectral Imaging for Angiography and Diagnostic CT</h2><div class="topic-carousel" id="spectral-carousel"><div class="topic-slide active"><h3 class="topic-kicker">Multi-Layer and Photon-Counting Detectors</h3><div class="topic-panels"><div class="panel figure-panel"><img class="panel-img" src="images/research/system-modeling.png" alt="Theoretical image quality modeling for spectral imaging"></div><div class="panel text-panel"><p>We model spectral detector systems for material decomposition and quantitative CT, including photon-counting and multi-layer flat-panel detector designs. The work combines detector physics, cascaded-systems analysis, and task-based image-quality modeling to predict the bias, variance, and performance tradeoffs of spectral imaging systems.</p><ul><li>Detector modeling for photon-counting and multi-layer detectors</li><li>Material decomposition algorithms and image-quality prediction</li><li>Theoretical modeling of spectral image quality</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/search?term=%22Theoretical%20Prediction%20of%20Bias%20in%20Model-Based%20Material%20Decomposition%22" target="_blank" rel="noopener">Theoretical prediction of bias in model-based material decomposition</a> - SPIE Medical Imaging 2026</li></ul></div></div></div></div><div class="topic-slide"><h3 class="topic-kicker">Spectral Digital Subtraction Angiography</h3><div class="topic-panels"><div class="panel figure-panel"><img class="panel-img" src="images/research/spectral-dsa-dps-results.png" alt="Spectral DSA diffusion posterior sampling results"></div><div class="panel text-panel"><p>Digital subtraction angiography is sensitive to motion between mask and contrast frames. We develop spectral-temporal processing methods that use energy-resolved measurements to improve vessel visibility, material separation, and robustness to motion in interventional angiography.</p><ul><li>Joint temporal and spectral processing with photon-counting detectors</li><li>Motion-robust material separation for angiographic imaging</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12463/124630Y/Three-material-decomposition-using-a-dual-layer-flat-panel-detector/10.1117/12.2654443.short" target="_blank" rel="noopener">Three-material decomposition using a dual-layer flat-panel detector in the presence of soft tissue motion</a> - SPIE Medical Imaging 2023</li></ul></div></div></div></div><div class="carousel-controls"><button type="button" data-dir="-1">Previous</button><button type="button" data-dir="1">Next</button></div></div></div></section>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Theme 3</p>
-    <h2 class="title">Deep Learning Image Formation</h2>
-    <figure class="figure" style="margin-bottom:22px;">
-      <img src="images/research/motion-matdecomp.png" alt="Diffusion model framework for joint motion compensation and material decomposition">
-      <figcaption>Joint motion compensation and material decomposition: forward and conditional reverse diffusion processes operating on pre- and post-contrast material maps.</figcaption>
-    </figure>
-    <div class="grid c2">
-      <div class="card">
-        <h3>Image Quality Assessment of Deep Learning Algorithms</h3>
-        <p>Deep learning reconstruction and denoising algorithms are nonlinear and
-        data-dependent, so traditional image quality metrics do not directly apply. We develop
-        assessment frameworks for these algorithms and study how to communicate their
-        variability to radiologists.</p>
-        <ul>
-          <li>Local linearity and Jacobian analysis of denoising networks</li>
-          <li>Communicating variability in deep learning CT reconstruction with posterior sampling</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Diffusion Models and Generative Networks</h3>
-        <p>We develop diffusion-based reconstruction methods conditioned on physically
-        accurate, nonlinear measurement models. Because these methods sample from a posterior
-        distribution, they also offer a principled way to quantify uncertainty and communicate
-        it to radiologists. Related work uses generative networks to synthesize realistic
-        lesions for algorithm development and evaluation.</p>
-        <ul>
-          <li>Spectral diffusion posterior sampling (IEEE TBME Featured Article)</li>
-          <li>GANs with radiomics supervision for lung lesion generation</li>
-          <li>CTorch: GPU-accelerated differentiable projector toolbox</li>
-        </ul>
-        <div class="spie-links">
-          <strong>Selected Presentations</strong>
-          <ul>
-            <li><a href="https://www.spiedigitallibrary.org/search?term=%22Generalized%20prediction%20framework%20for%20reconstructed%20image%20properties%20using%20neural%20networks%22" target="_blank" rel="noopener">Generalized prediction framework for reconstructed image properties using neural networks</a> — SPIE Medical Imaging 2019</li>
-            <li><a href="https://youtu.be/wW8eM3A49WY" target="_blank" rel="noopener">Communicating Variability in Deep Learning CT Reconstruction to Radiologists (observer study)</a> — Deep Reconstruction Workshop 2025, recording on YouTube</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block research-topic"><div class="wrap"><h2 class="title">Deep Learning Image Formation</h2><div class="topic-carousel" id="dl-carousel"><div class="topic-slide active"><h3 class="topic-kicker">Assessment of Deep Learning Reconstruction</h3><div class="topic-panels"><div class="panel figure-panel"><img class="panel-img" src="images/research/dl-reconstruction-variability-display.png" alt="Display strategies for communicating variability in deep learning CT reconstruction"></div><div class="panel text-panel"><p>Deep learning reconstruction and post-processing methods are nonlinear and data dependent. We develop analysis and observer-study methods to evaluate how learned algorithms change image structure, local noise, and diagnostic interpretation, including how uncertainty and variability should be communicated to radiologists.</p><ul><li>Analysis of deep learning reconstruction and denoising behavior</li><li>Observer studies for reconstruction uncertainty and variability display</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://youtu.be/wW8eM3A49WY" target="_blank" rel="noopener">Communicating variability in deep learning CT reconstruction to radiologists</a> - Deep Reconstruction Workshop 2025</li></ul></div></div></div></div><div class="topic-slide"><h3 class="topic-kicker">Image Synthesis with Radiomics Supervision</h3><div class="topic-panels"><div class="panel figure-panel"><img class="panel-img" src="images/research/dl-radiomics-supervision-synthesis.png" alt="Image synthesis with radiomics supervision"></div><div class="panel text-panel"><p>We develop domain-guided generative models for image formation and image-analysis evaluation. This work incorporates imaging physics and quantitative feature constraints into learned models, including radiomics-supervised synthesis of lung CT image content.</p><ul><li>Radiomics-conditioned image synthesis</li><li>Domain knowledge incorporated into generative imaging models</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/search?term=%22A%20Generative%20Model%20of%20Lung%20CT%20Conditioned%20on%20Radiomics%20Features%22" target="_blank" rel="noopener">A generative model of lung CT conditioned on radiomics features</a> - SPIE Medical Imaging 2026</li></ul></div></div></div></div><div class="carousel-controls"><button type="button" data-dir="-1">Previous</button><button type="button" data-dir="1">Next</button></div></div></div></section>
 
-<section class="block alt">
-  <div class="wrap">
-    <p class="eyebrow">Theme 4</p>
-    <h2 class="title">Physics-Guided Radiomics Standardization</h2>
-    <figure class="figure" style="margin-bottom:22px;">
-      <img src="images/research/radiomics-workflow.png" alt="Current and proposed radiomics standardization workflows">
-      <figcaption>Current standardization techniques operate on images or radiomic features; our proposed technique models the full imaging chain — x-ray source, patient anatomy, detector, and reconstruction — to standardize radiomics from first principles.</figcaption>
-    </figure>
-    <div class="theme-figs">
-      <figure class="figure">
-        <img src="images/research/glcm-recovery.png" alt="GLCM recovery process and classification performance">
-        <figcaption>Recovery of GLCM features from blurred and noisy images, restoring classification performance toward ground truth.</figcaption>
-      </figure>
-      <figure class="figure">
-        <img src="images/research/system-modeling.png" alt="Theoretical bias prediction at three dose levels" style="object-fit:contain; background:#000;">
-        <figcaption>Theoretical bias prediction across dose levels (1.5, 0.8, 0.1 mAs): bias emerges as dose decreases.</figcaption>
-      </figure>
-    </div>
-    <figure class="figure" style="margin-bottom:22px;">
-      <img src="images/research/texture-phantoms.jpg" alt="3D-printed texture phantoms and CT cross-sections">
-      <figcaption>3D-printed texture phantoms and CT cross-sections used for radiomics validation.</figcaption>
-    </figure>
-    <div class="grid c2">
-      <div class="card">
-        <h3>Recovering Robust Quantitative Features</h3>
-        <p>Radiomic features feed predictive models for diagnosis, prognosis, and treatment
-        response — but they vary with scanner, dose, and reconstruction kernel. We derived a
-        theoretical framework that models how blur and noise corrupt features such as gray-level
-        co-occurrence matrices, and recover the underlying ground-truth values.</p>
-        <ul>
-          <li>Standardization of histogram- and GLCM-based radiomics (PMB, 2021)</li>
-          <li>Theoretical prediction of feature variance to improve classification</li>
-          <li>Experimental validation on clinical scanners across dose and kernel</li>
-        </ul>
-        <div class="spie-links">
-          <strong>Selected Presentations</strong>
-          <ul>
-            <li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11595/1159509/End-to-end-modeling-for-predicting-and-estimating-radiomics/10.1117/12.2582150.short" target="_blank" rel="noopener">End-to-end modeling for predicting and estimating radiomics: application to GLCM in CT</a> — SPIE Medical Imaging 2021 <em>(paper + presentation recording)</em></li>
-            <li><a href="https://doi.org/10.1117/12.3027016" target="_blank" rel="noopener">When simulation becomes real: a 3D-printed power-law phantom in tomosynthesis imaging</a> — SPIE IWBI 2024</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Image Quality and Task-Based Assessment</h3>
-        <p>A long-standing foundation of the lab is the quantitative assessment of imaging
-        performance with respect to the clinical task. We have extended classical analysis
-        frameworks to nonlinear and data-dependent algorithms, and validate predictions
-        experimentally using 3D-printed, patient-specific phantoms developed with the
-        PixelPrint collaboration.</p>
-        <ul>
-          <li>Task-driven acquisition, fluence field modulation, and regularization design</li>
-          <li>Performance analysis for nonlinear tomographic data processing</li>
-          <li>Patient-specific 3D-printed CT phantoms for image quality assessment</li>
-        </ul>
-        <div class="spie-links">
-          <strong>Selected Presentations</strong>
-          <ul>
-            <li><a href="https://www.spiedigitallibrary.org/search?term=%22Joint%20Optimization%20of%20Fluence%20Field%20Modulation%20and%20Regularization%20for%20Multi-Task%20Objectives%22" target="_blank" rel="noopener">Joint optimization of fluence field modulation and regularization for multi-task objectives</a> — SPIE Medical Imaging 2018</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block alt research-topic"><div class="wrap"><h2 class="title">Physics-Guided Radiomics Standardization</h2><div class="topic-slide active"><h3 class="topic-kicker">Radiomics Feature Standardization</h3><div class="topic-panels"><div class="panel figure-panel"><div class="image-carousel"><div class="image-slide active"><img class="panel-img" src="images/research/radiomics-glcm-recovery-slide7.png" alt="GLCM recovery workflow from SPIE 2021 radiomics presentation"></div><div class="image-slide"><img class="panel-img" src="images/research/radiomics-classification-slide14.png" alt="Classification performance after radiomics standardization"></div><div class="carousel-controls image-controls"><button type="button" data-dir="-1">Previous</button><button type="button" data-dir="1">Next</button></div></div></div><div class="panel text-panel"><p>Radiomics features depend on spatial resolution, noise, dose, reconstruction kernel, and scanner configuration. We use prior knowledge of image blur and noise to predict scanner-dependent feature changes and recover more consistent feature values for downstream quantitative analysis.</p><ul><li>Standardization of histogram- and texture-based radiomics features</li><li>Prediction and correction of scanner-dependent feature shifts from blur and noise</li><li>Evaluation of feature recovery in classification tasks</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11595/1159509/End-to-end-modeling-for-predicting-and-estimating-radiomics/10.1117/12.2582150.short" target="_blank" rel="noopener">End-to-end modeling for predicting and estimating radiomics: application to GLCM in CT</a> - SPIE Medical Imaging 2021</li></ul></div></div></div></div></div></section>
 
-<section class="block">
-  <div class="wrap">
-    <p class="eyebrow">Theme 5</p>
-    <h2 class="title">Clinical Translation</h2>
-    <figure class="figure" style="margin-bottom:22px;">
-      <img src="images/research/view-angle-workflow.png" alt="Automatic view angle prediction workflow: segmentation, view angle optimization, and predicted neck and barrel views">
-      <figcaption>Automatic view angle prediction workflow: aneurysm segmentation from 3D imaging, joint optimization of neck- and barrel-view criteria with mechanical constraints, and the resulting predicted views — winner of the SPIE Medical Imaging 2026 Early Career Investigator Award.</figcaption>
-    </figure>
-    <div class="grid c2">
-      <div class="card">
-        <h3>Automatic View Angle Prediction for Aneurysm Treatment</h3>
-        <p>During endovascular treatment of intracranial aneurysms, finding the optimal C-arm
-        working angle is time-consuming and operator-dependent. We developed a neural
-        network-based system that automatically predicts optimal viewing angles from
-        pre-operative imaging, in collaboration with the Department of Neurosurgery at Penn
-        and Siemens Healthineers.</p>
-        <ul>
-          <li>First place, SPIE Early-Career Investigator Award 2026 (Ma et al.)</li>
-          <li>Siemens Healthineers-funded development toward clinical deployment</li>
-        </ul>
-        <div class="spie-links">
-          <strong>Selected Presentations</strong>
-          <ul>
-            <li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13927/139270K/Automatic-viewing-angles-prediction-for-endovascular-treatment-in-intracranial-aneurysm/10.1117/12.3086804.full" target="_blank" rel="noopener">Automatic viewing angles prediction for endovascular treatment in intracranial aneurysm</a> — SPIE Medical Imaging 2026 <em>(1st place, Early-Career Investigator Award)</em></li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Flow &amp; Feature Extraction</h3>
-        <p>We develop quantitative analysis methods for vascular imaging that extract
-        vessel geometry and flow information from DSA and CT, supporting diagnosis and
-        treatment planning in neurovascular and hepatic applications.</p>
-        <ul>
-          <li>3D vessel segmentation of portal and hepatic veins</li>
-          <li>Centerline extraction and vessel geometry quantification from DSA</li>
-        </ul>
-      </div>
-    </div>
-    <div class="theme-figs" style="margin-top:22px;">
-      <figure class="figure">
-        <img src="images/research/vessel-segmentation.png" alt="3D vessel segmentation of portal and hepatic veins" style="object-fit:contain; background:#fff;">
-        <figcaption>3D vessel segmentation: portal and hepatic vein predictions vs. ground truth.</figcaption>
-      </figure>
-      <figure class="figure">
-        <img src="images/research/centerline-extraction.png" alt="Vessel centerline extraction" style="object-fit:contain; background:#fff;">
-        <figcaption>Vessel segmentation and centerline extraction from DSA.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
+<section class="block research-topic"><div class="wrap"><h2 class="title">Image Quality &amp; Task-Driven Imaging</h2><div class="topic-slide active"><h3 class="topic-kicker">Image Chain Modeling and Model Observers</h3><div class="topic-panels"><div class="panel figure-panel"><img class="panel-img" src="images/research/task-driven-imaging-workflow.png" alt="Task-driven imaging workflow"></div><div class="panel text-panel"><p>We model the imaging chain from data acquisition through reconstruction and image interpretation. The goal is to connect system design choices to task performance, including objective and model-observer methods for subjective image-quality assessment.</p><ul><li>Image-chain modeling for acquisition and reconstruction design</li><li>Model observers for image-quality assessment</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/search?term=%22Joint%20Optimization%20of%20Fluence%20Field%20Modulation%20and%20Regularization%20for%20Multi-Task%20Objectives%22" target="_blank" rel="noopener">Joint optimization of fluence field modulation and regularization for multi-task objectives</a> - SPIE Medical Imaging 2018</li></ul></div></div></div></div></div></section>
 
-<section class="block alt">
-  <div class="wrap">
-    <p class="eyebrow">Collaboration</p>
-    <h2 class="title">Collaborators</h2>
-    <div class="grid c2">
-      <div class="card">
-        <h3>Collaborators</h3>
-        <ul>
-          <li>Advanced Imaging and Instrumentation Lab (AIAI), Johns Hopkins University</li>
-          <li>Center for Computer Vision and Imaging Biomarkers (CVIB), UCLA</li>
-          <li>Department of Radiology, University of Chicago</li>
-          <li>Departments of Neurosurgery and Radiology, University of Pennsylvania</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="block alt research-topic"><div class="wrap"><h2 class="title">Image Analysis</h2><div class="topic-slide active"><h3 class="topic-kicker">Automatic Working-Angle Prediction for Neuro-Interventional Procedures</h3><div class="topic-panels"><div class="panel figure-panel"><img class="panel-img" src="images/research/view-angle-prediction-workflow-slide5.png" alt="Automatic view angle prediction workflow"></div><div class="panel text-panel"><p>We develop image-analysis and quantitative feature-extraction methods for procedural planning and evaluation. In neuro-interventional applications, this includes automatic working-angle prediction for intracranial aneurysm treatment using anatomical models derived from 3D angiographic imaging.</p><ul><li>Segmentation and quantitative feature extraction from 3D angiography</li><li>Automatic neck-view and barrel-view prediction for aneurysm treatment</li></ul><div class="spie-links"><strong>Selected Presentations</strong><ul><li><a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13927/139270K/Automatic-viewing-angles-prediction-for-endovascular-treatment-in-intracranial-aneurysm/10.1117/12.3086804.full" target="_blank" rel="noopener">Automatic viewing angles prediction for endovascular treatment in intracranial aneurysm</a> - SPIE Medical Imaging 2026</li></ul></div></div></div></div></div></section>
 
-<footer class="site">
-  <div class="wrap cols">
-    <div>
-      <strong>IMPACT Lab</strong><br>
-      Department of Radiology, University of Pennsylvania<br>
-      3620 Hamilton Walk, Philadelphia, PA 19104
-    </div>
-    <div>
-      <a href="mailto:grace.j.gang@pennmedicine.upenn.edu">grace.j.gang@pennmedicine.upenn.edu</a>
-    </div>
-  </div>
-</footer>
+<section class="block research-topic"><div class="wrap"><h2 class="title">Collaborators</h2><div class="info-box"><ul><li>Advanced Imaging and Instrumentation Lab (AIAI), Johns Hopkins University</li><li>Center for Computer Vision and Imaging Biomarkers (CVIB), UCLA</li><li>Department of Radiology, University of Chicago</li><li>Departments of Neurosurgery and Radiology, University of Pennsylvania</li></ul></div></div></section>
 
+<footer class="site"><div class="wrap cols"><div><strong>IMPACT Lab</strong><br>Department of Radiology, University of Pennsylvania<br>3620 Hamilton Walk, Philadelphia, PA 19104</div></div></footer>
+
+<script>
+(function () {
+  function wireCarousel(root, selector) {
+    root.querySelectorAll(selector).forEach(function (carousel) {
+      var slides = carousel.querySelectorAll(selector === '.topic-carousel' ? '.topic-slide' : '.image-slide');
+      if (slides.length < 2) return;
+      var current = 0;
+      function go(delta) {
+        slides[current].classList.remove('active');
+        current = (current + delta + slides.length) % slides.length;
+        slides[current].classList.add('active');
+      }
+      carousel.querySelectorAll('.carousel-controls button').forEach(function (button) {
+        button.addEventListener('click', function () { go(Number(button.dataset.dir)); });
+      });
+    });
+  }
+  wireCarousel(document, '.topic-carousel');
+  wireCarousel(document, '.image-carousel');
+})();
+</script>
 </body>
 </html>

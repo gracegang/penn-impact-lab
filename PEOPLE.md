@@ -9,29 +9,27 @@ directly following README.md). Keep photos in `images/people/`, named
 
 | Name | Title | Photo |
 |---|---|---|
-| Grace J. Gang, PhD | Associate Professor, Radiology, University of Pennsylvania; Adjunct Professor, BME, Johns Hopkins University | grace-gang.jpg |
+| Grace J. Gang, PhD | Associate Professor, Radiology, University of Pennsylvania | grace-gang.jpg |
 
 ## Current Members
 
 | Name | Role | Joined | Photo |
 |---|---|---|---|
 | Donghyeon Lee, PhD | Post-doctoral Fellow | 02/2025 | donghyeon-lee.jpg |
-| Limei Ma, PhD | Post-doctoral Fellow | 11/2023 | limei-ma.jpg |
 | Huay Din | PhD Student, Bioengineering | 08/2023 | huay-din.jpg |
 | Suyu Liao | PhD Student, Bioengineering | 08/2023 | suyu-liao.jpg |
-| Mitchell Pelline | Research Specialist | 07/2025 | mitchell-pelline.jpg |
 
 ## Alumni
 
 | Name | Role | Years | Photo |
 |---|---|---|---|
+| Limei Ma, PhD | Post-doctoral Fellow | TBD | limei-ma.jpg |
+| Mitchell Pelline | Research Specialist | TBD | mitchell-pelline.jpg |
 | Chang Min Hyun, PhD | Post-doctoral Fellow | 2023–2024 | changmin-hyun.jpg |
 | Jason Fan, PhD | Post-doctoral Fellow | 2025 | jason-fan.jpg |
 | Mehrana Mohtasebi, PhD | Post-doctoral Fellow | 2023–2024 | mehrana-mohtasebi.jpg |
 | Xiaoxuan (Esme) Zhang, PhD | Post-doctoral Fellow | 2023–2024 | esme-zhang.jpg |
 | Louisa Coughlin | Summer Student, TRIP Mentoring Program | 2025 | louisa-coughlin.jpg |
-| Timothy Winfree | PhD Student, Bioengineering | 2024–2025 | (none) |
-| Nathan Hoang | Summer Student | 2025 | (none) |
 
 ## How to update (for humans)
 

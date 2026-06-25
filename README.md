@@ -7,27 +7,27 @@ Plain HTML + CSS. **No build step, no server, no dependencies.** Open `index.htm
 browser and everything works from local files.
 
 - Live repo: https://github.com/gracegang/impact-lab-website (private)
-- Local copy: `D:\gang\misc\Lab Website\impact-website\`
-- Source materials (CV, posters, personnel docs, original photos): `D:\gang\misc\Lab Website\legacy\` — **not** in git, do not delete carelessly; it holds the only copies.
+- Local copy: `D:\GoogleDrive\My Drive\Work\misc\Lab Website\impact-website\`
+- Source materials (CV, posters, personnel docs, original photos): `D:\GoogleDrive\My Drive\Work\misc\Lab Website\legacy\` — **not** in git, do not delete carelessly; it holds the only copies.
 
 ## Structure
 
 ```
-index.html          Home: hero, research area cards, PI intro, photo slideshow, news highlights
-research.html       Five research themes with figures and "Selected Presentations" link boxes
+index.html          Home: hero, research area cards, news highlights
+research.html       Six research areas with figures and "Selected Presentations" link boxes
 people.html         PI bio + current members + alumni (photos in images/people/)
 publications.html   Peer-reviewed journal articles, grouped by year
 news.html           Awards, honors, milestones (newest first)
 join.html           Recruiting page
-contact.html        Email + address
 css/style.css       All styling (dark theme, CSS variables at top)
+js/email.js         Email-link helper that avoids raw email text in HTML
 images/people/      Headshots (square-ish crops, displayed 1:1 via CSS)
-images/research/    Research figures (PNG, mostly cropped from Grace's slides/posters)
-images/lab/         Lab life photos for the homepage slideshow
+images/research/    Research figures (PNG, mostly cropped from Grace's slides/posters/papers)
+images/lab/         Lab life photos retained but not currently shown on homepage
 ```
 
 Every page repeats the same header/nav and footer markup — there are no includes. **When
-editing nav or footer, change all 7 HTML files.** The `class="active"` on the nav link must
+editing nav or footer, change all 6 HTML files.** The `class="active"` on the nav link must
 match the current page.
 
 ## Common updates
@@ -47,17 +47,12 @@ move a member to Alumni), then sync `people.html` to match. Members are
 ### Add a publication
 Edit `publications.html`. Entries are `<li>` under the year's `<ul class="pubs">`;
 `<strong>Gang GJ</strong>` bolds the PI, `<span class="src">` italicizes the journal.
-Only peer-reviewed journal articles are listed — not conference proceedings.
-
-### Add a slideshow photo
-Drop a JPG in `images/lab/`, then copy a `<figure class="slide">` block inside
-`#lab-slideshow` in `index.html` and update the filename + caption. The dots and rotation
-adjust automatically. HEIC photos must be converted to JPG first.
+Only peer-reviewed journal articles and arXiv/preprint records are listed — not submitted articles.
 
 ### Add a research figure
 PNGs go in `images/research/`. Figures from PowerPoint: export the slide as a high-res PNG
 and crop (no need to keep animations — flatten GIFs/movies to a static frame, or show 2–3
-frames side by side). Use `<figure class="figure">` with a `<figcaption>`.
+frames side by side). Use `<figure class="figure">` with a `<figcaption>` only when a caption is useful.
 
 ### Publish changes
 ```
@@ -66,51 +61,28 @@ git commit -m "Describe the change"
 git push
 ```
 
-## Style guide (important — these are Grace's explicit preferences)
+## Style guide
 
 1. **Dark theme.** Navy-charcoal backgrounds with cyan (`--accent`) and gold (`--accent-2`)
-   accents, matching her presentation style. Colors are CSS variables at the top of
+   accents, matching Grace's presentation style. Colors are CSS variables at the top of
    `style.css`. Do not switch to a light/Penn-branded theme.
-2. **Tone:** modeled on the I-STAR Lab (istar.jhu.edu) and AIAI Lab (aiai.jhu.edu) sites —
-   understated, declarative, research-first academic prose. **No laundry lists** of
+2. **Tone:** understated, declarative, research-first academic prose. No laundry lists of
    subfields strung together with commas; state what the work achieves in full sentences.
-   Bullet lists are fine only for genuine itemizations (project lists, application steps).
-3. **Own-lab work only** for featured research areas and images. Grace is a co-author on
-   collaborator-led projects (e.g., extended FOV imaging, tunable neural networks) — these
-   stay on the Publications page but are NOT featured as lab research areas.
-4. **No funding information.** No grant numbers, sponsors, or award amounts anywhere.
-   Funding-dependent language is also out (e.g., say "qualified candidates are always
-   welcome", never "openings depend on funding").
-5. **Collaborators list** (Research page + homepage): JHU AIAI, UCLA CVIB, University of
-   Chicago, Penn Neurosurgery/Radiology. ACRF Sydney was deliberately removed.
-6. **Join Us page** emphasizes strong quantitative background and programming skills.
-7. **Presentation links:** prioritize Grace's first-author talks, but don't label them as
-   such on the page — the boxes are titled "Selected Presentations". Link directly to SPIE
-   Digital Library paper pages (they host the talk recordings) or YouTube.
-8. **No graphic imagery** (cadaver/dissection photos exist in the source decks — don't use).
-9. **Images from PPT:** static PNGs only; for animations/movies, use a representative frame
-   or a 3-frame side-by-side montage.
+3. **Own-lab work only** for featured research areas and images. Collaborator-led projects
+   stay on the Publications page but are not featured as lab research areas.
+4. **No funding information.** No grant numbers, sponsors, award amounts, or funding-dependent language.
+5. **Join Us page** emphasizes strong quantitative background and programming skills.
+6. **Presentation links:** prioritize Grace's first-author talks, but don't label them as
+   such on the page — the boxes are titled "Selected Presentations".
+7. **No graphic imagery** from source decks.
+8. **Do not place raw email addresses in visible HTML.** Use the email helper or another bot-resistant contact pattern.
 
 ## Key facts
 
-- Lab email: grace.j.gang@pennmedicine.upenn.edu
 - Address: Department of Radiology, University of Pennsylvania, 3620 Hamilton Walk,
   Philadelphia, PA 19104
 - Tagline: "Blackboard → Benchtop → Bedside" / "Developing novel imaging technologies
   guided by a rigorous understanding of image science"
-- Research themes (research.html): 1 Interventional (non-circular orbits),
-  2 Spectral imaging & angiography, 3 Deep learning image formation,
-  4 Physics-guided radiomics standardization, 5 Clinical translation (view angle prediction)
+- Research areas (research.html): interventional imaging, spectral imaging, deep learning image formation,
+  radiomics standardization, image quality/task-driven imaging, and image analysis
 - Deep Recon Workshop 2025 talk recording: https://youtu.be/wW8eM3A49WY
-
-## Useful extraction recipes (Windows / PowerShell)
-
-- **Images inside .docx/.pptx**: they're ZIP files — extract `word/media/` or `ppt/media/`
-  with `System.IO.Compression.ZipFile`.
-- **High-res slide export**: PowerPoint COM —
-  `$pres.Slides.Item(n).Export("out.png", "PNG", 3840, 2160)`. To capture content hidden
-  behind decorations, delete the covering shape in the COM session and close **without
-  saving**.
-- **HEIC → JPG**: WPF `BitmapDecoder`/`JpegBitmapEncoder` (PresentationCore) handles it if
-  the Windows HEIF extension is installed.
-- **GIF frames**: `System.Drawing` — `SelectActiveFrame` over `FrameDimension.Time`.
