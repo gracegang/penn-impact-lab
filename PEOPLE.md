@@ -18,24 +18,25 @@ directly following README.md). Keep photos in `images/people/`, named
 | Donghyeon Lee, PhD | Post-doctoral Fellow | 02/2025 | donghyeon-lee.jpg |
 | Huay Din | PhD Student, Bioengineering | 08/2023 | huay-din.jpg |
 | Suyu Liao | PhD Student, Bioengineering | 08/2023 | suyu-liao.jpg |
+| Thehan Atalugama | Summer Student, SUPERS Program 2026 | 2026 | thehan-atalugama.jpg |
 
 ## Alumni
 
-| Name | Role | Years | Photo |
-|---|---|---|---|
-| Limei Ma, PhD | Post-doctoral Fellow | TBD | limei-ma.jpg |
-| Mitchell Pelline | Research Specialist | TBD | mitchell-pelline.jpg |
-| Chang Min Hyun, PhD | Post-doctoral Fellow | 2023–2024 | changmin-hyun.jpg |
-| Jason Fan, PhD | Post-doctoral Fellow | 2025 | jason-fan.jpg |
-| Mehrana Mohtasebi, PhD | Post-doctoral Fellow | 2023–2024 | mehrana-mohtasebi.jpg |
-| Xiaoxuan (Esme) Zhang, PhD | Post-doctoral Fellow | 2023–2024 | esme-zhang.jpg |
-| Louisa Coughlin | Summer Student, TRIP Mentoring Program | 2025 | louisa-coughlin.jpg |
+| Name | Role | Photo |
+|---|---|---|
+| Limei Ma, PhD | Post-doctoral Fellow | limei-ma.jpg |
+| Mitchell Pelline | Research Specialist | mitchell-pelline.jpg |
+| Chang Min Hyun, PhD | Post-doctoral Fellow | changmin-hyun.jpg |
+| Jason Fan, PhD | Post-doctoral Fellow | jason-fan.jpg |
+| Mehrana Mohtasebi, PhD | Post-doctoral Fellow | mehrana-mohtasebi.jpg |
+| Xiaoxuan (Esme) Zhang, PhD | Post-doctoral Fellow | esme-zhang.jpg |
+| Louisa Coughlin | Summer Student, TRIP Mentoring Program | louisa-coughlin.jpg |
 
 ## How to update (for humans)
 
 1. **New member:** add a row to Current Members; drop their photo (JPG) into
    `images/people/`.
-2. **Member leaves:** move their row from Current Members to Alumni and fill in Years.
+2. **Member leaves:** move their row from Current Members to Alumni.
 3. Then either tell an AI agent "sync the people page with PEOPLE.md", or hand-edit
    `people.html` (copy an existing `<div class="person">` block).
 4. Commit and push (`git add -A; git commit -m "..."; git push`).
