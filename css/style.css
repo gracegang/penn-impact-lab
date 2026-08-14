@@ -346,6 +346,51 @@ footer.site .cols { display: flex; justify-content: space-between; gap: 24px; fl
 @media (max-width: 860px) { .topic-panels { grid-template-columns: 1fr; } }
 .topic-slide { display: none; }
 .topic-slide.active { display: block; }
+.topic-carousel {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  padding: 0 0 54px;
+}
+.topic-carousel > .topic-slide {
+  display: block;
+  grid-area: 1 / 1;
+  justify-self: center;
+  width: min(840px, 76%);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(0) scale(0.86);
+  transition: opacity 500ms ease, transform 500ms ease, filter 500ms ease;
+  filter: saturate(0.65);
+  z-index: 0;
+}
+.topic-carousel > .topic-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+  filter: none;
+  z-index: 3;
+}
+.topic-carousel > .topic-slide.prev,
+.topic-carousel > .topic-slide.next {
+  opacity: 0.34;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 1;
+}
+.topic-carousel > .topic-slide.prev { transform: translateX(-78%) scale(0.84); }
+.topic-carousel > .topic-slide.next { transform: translateX(78%) scale(0.84); }
+.topic-carousel > .topic-slide.prev:hover,
+.topic-carousel > .topic-slide.next:hover {
+  opacity: 0.52;
+}
+.topic-carousel > .carousel-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translateX(-50%);
+  z-index: 5;
+}
 .panel-img {
   width: 100%;
   max-height: 430px;
@@ -396,4 +441,9 @@ footer.site .cols { display: flex; justify-content: space-between; gap: 24px; fl
 .image-controls { justify-content: center; }
 .panel-img { max-height: 500px; }
 .info-box ul { margin-top: 0; margin-bottom: 0; }
-@media (max-width: 860px) { .figure-panel { border-right: 0; border-bottom: 1px solid var(--line); } }
+@media (max-width: 860px) {
+  .topic-carousel > .topic-slide { width: min(100%, 92%); }
+  .topic-carousel > .topic-slide.prev { transform: translateX(-94%) scale(0.84); }
+  .topic-carousel > .topic-slide.next { transform: translateX(94%) scale(0.84); }
+  .figure-panel { border-right: 0; border-bottom: 1px solid var(--line); }
+}
