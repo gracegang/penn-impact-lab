@@ -48,7 +48,7 @@ header.site {
   flex-wrap: wrap;
 }
 .brand { text-decoration: none; color: var(--ink); }
-.brand .lab { font: 700 1.5rem/1.1 "Segoe UI", Helvetica, Arial, sans-serif; color: var(--head); letter-spacing: 0.5px; }
+.brand .lab { font: 700 1.5rem/1.1 "Segoe UI", Helvetica, Arial, sans-serif; color: var(--accent-2); letter-spacing: 0.5px; }
 .brand .full { font-size: 0.85rem; color: var(--subtle); margin-top: 2px; font-family: "Segoe UI", Helvetica, Arial, sans-serif; }
 .nav { display: flex; flex-wrap: wrap; gap: 2px; }
 .nav a {
@@ -403,11 +403,8 @@ footer.site .cols { display: flex; justify-content: space-between; gap: 24px; fl
 .workshop-head .eyebrow { margin-bottom: 8px; }
 .workshop-head h1 { color: var(--head); font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.12; }
 .workshop-overview { padding-bottom: 44px; }
-.workshop-intro { grid-template-columns: 1.35fr 0.65fr; }
-.workshop-intro p { color: var(--muted); }
-.workshop-intro .title { color: var(--head); margin-bottom: 16px; }
-.workshop-links .btn { margin-top: 4px; }
-.workshop-note { font-size: 0.86rem !important; color: var(--subtle) !important; }
+.workshop-overview p, .workshop-introduction p { max-width: 900px; color: var(--muted); }
+.workshop-overview .title, .workshop-introduction .title { color: var(--head); margin-bottom: 16px; }
 .workshop-metrics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -457,6 +454,8 @@ footer.site .cols { display: flex; justify-content: space-between; gap: 24px; fl
 .agenda-copy h3 { margin: 0 0 4px; font-size: 1.03rem; line-height: 1.35; }
 .agenda-copy p { margin: 0 0 7px; color: var(--muted); font-size: 0.92rem; }
 .agenda-copy strong { color: var(--ink); }
+.speaker-link { color: inherit; text-decoration-color: rgba(79, 195, 217, 0.5); text-underline-offset: 2px; }
+.speaker-link:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .agenda-brief, .agenda-break, .agenda-special { grid-template-columns: 92px minmax(0, 1fr); }
 .agenda-break { padding-block: 13px; }
 .agenda-break h3 { color: var(--muted); }
@@ -473,11 +472,15 @@ footer.site .cols { display: flex; justify-content: space-between; gap: 24px; fl
 .recording-status.pending { border-color: rgba(242, 201, 109, 0.45); color: var(--accent-2); }
 .recording-status.not-planned { color: var(--subtle); }
 .recording-status.private:hover { border-color: var(--accent); }
+.previous-meetings ul { max-width: 900px; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.previous-meetings li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 0.8fr); gap: 24px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.previous-meetings li span { color: var(--muted); }
 
 @media (max-width: 700px) {
   .agenda-item { grid-template-columns: 68px 64px minmax(0, 1fr); gap: 12px; }
   .agenda-item img { width: 64px; height: 64px; }
   .agenda-brief, .agenda-break, .agenda-special { grid-template-columns: 68px minmax(0, 1fr); }
+  .previous-meetings li { grid-template-columns: 1fr; gap: 4px; }
 }
 
 @media (max-width: 470px) {
