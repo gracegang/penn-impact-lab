@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gracegang.github.io/penn-impact-lab/sitemap.xml
